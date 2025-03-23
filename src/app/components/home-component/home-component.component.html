@@ -1,63 +1,46 @@
 <section>
   <div>
-    <img src="/business-5475660_1920.jpg" />
+    <img src="/business-5475660_1920.jpg" class="w-100" />
   </div>
-  <div class="hero-section text-center">
+  <div class="hero-section text-center mt-2 p-3">
     <h1>Bienvenido a nuestra WebApp Financiera</h1>
   </div>
-
-  <div class="description-section">
-    <h3>Conoce tu estado financiero</h3>
-    <p class="description-text">
-      ¿Eres una Startup y sabes como definir exactamente tu producto/servicio,
-      conoces cada detalle de tu negocio, pero se te dan mal los cálculos
-      financieros? Aquí podrás encontrar una forma para manejar y conocer tu
-      estado financiero de la forma más sencilla.
+  <div class="description-text text-center">
+    <p>
+      Si eres una startup con una idea clara de tu producto o servicio y conoces
+      cada detalle de tu negocio, pero la gestión financiera te resulta un
+      desafío, has llegado al lugar indicado. Nuestra plataforma te ofrece una
+      solución intuitiva y sencilla para administrar y comprender tu estado
+      financiero sin complicaciones. Con herramientas diseñadas para facilitar
+      el análisis de ingresos, gastos y rentabilidad, podrás tomar decisiones
+      informadas para el crecimiento de tu empresa. No dejes que los números
+      sean un obstáculo, empieza hoy a optimizar la salud financiera de tu
+      negocio con nuestra WebApp.
     </p>
-    <div class="button-test-prove">
-      <button class="btn btn-primary">Test</button>
-    </div>
   </div>
+  <hr />
+  <div class="description-section">
+    <br />
+    <h4>Conoce tu estado financiero</h4>
+    <p>
+      Comprueba y haz cálculos sobre tu estado financiero completamente GRATIS
+      accediendo al apartado de test.
+    </p>
+    <div class="button-financestatetest-prove">
+      <button
+        class="btn btn-primary"
+        routerLink="'/financestatetest'"
+        routerLinkActive="router-link-active"
+      >
+        Test
+      </button>
+    </div>
+    <small>**NOTA**: Los datos insertados no se guardarán.</small>
+  </div>
+  <hr />
   <br />
-  <div class="pricing-section">
-    <div class="card-group">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Card Free</h5>
-          <p class="card-text">
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </p>
-          <p class="card-text">
-            <small class="text-body-secondary">Price: Free</small>
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Card Standar</h5>
-          <p class="card-text">
-            This card has supporting text below as a natural lead-in to
-            additional content.
-          </p>
-          <p class="card-text">
-            <small class="text-body-secondary">Price: 5€</small>
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Card Premium</h5>
-          <p class="card-text">
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This card has even longer content than the
-            first to show that equal height action.
-          </p>
-          <p class="card-text">
-            <small class="text-body-secondary">Price: 10€</small>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+  <!--Cards con el precio de cada tipo de cuenta-->
+  <planning-component></planning-component>
+  <!--Descripcion sobre cada tipo de cuenta personal (TABLA)-->
+  <tableplanning-component></tableplanning-component>
 </section>

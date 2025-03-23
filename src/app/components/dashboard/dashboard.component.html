@@ -1,1 +1,19 @@
-<p>dashboard works!</p>
+<div class="dashboard-container">
+  <h2>Bienvenido al Dashboard</h2>
+
+  <!-- Alerta si no hay plan -->
+  <div *ngIf="!hasPlan" class="alert alert-warning" role="alert">
+    ¡No tienes un plan activo! Para acceder a todas las funciones, por favor
+    adquiere un plan.
+    <button class="btn btn-primary mt-3" (click)="redirectToPlans()">
+      Adquirir Plan
+    </button>
+  </div>
+
+  <!-- Contenido adicional del dashboard -->
+  <div *ngIf="hasPlan" class="dashboard-content">
+    <h3>Funciones disponibles</h3>
+    <!-- Mostrar contenido desbloqueado con el plan -->
+    <p>Ahora puedes acceder a gráficos, informes, y más.</p>
+  </div>
+</div>
